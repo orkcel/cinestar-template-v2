@@ -1,0 +1,20 @@
+@import "/src/Variables/Variables.module";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: $quick-sand-font;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}

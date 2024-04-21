@@ -1,0 +1,1260 @@
+@import "/src/Variables/Variables.module";
+
+.playBtn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border: 1px solid $orange-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+
+  svg {
+    font-size: 33px;
+    color: $orange-color;
+  }
+}
+.iFrame {
+  width: 100%;
+  height: 100%;
+}
+p {
+  font-family: $montserrat-font;
+  margin-bottom: 16px;
+}
+
+.homeWrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .homeSection {
+    width: 100%;
+    height: 1100px;
+    background-image: url("https://html.rometheme.pro/cinestar/image/image-1920x900-1.jpg");
+    background-position: center 400%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(21, 21, 21, 0.25) 33%, rgb(21, 21, 21) 78%);
+    }
+
+    .homeContent {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      .homeTitle {
+        max-width: 720px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        z-index: 3;
+        margin-bottom: 145px;
+
+        h5 {
+          font-size: 28px;
+          margin-bottom: 8px;
+        }
+
+        h1 {
+          font-family: $cormorant-font;
+          font-size: 100px;
+          margin-bottom: 8px;
+
+          span {
+            color: $orange-color;
+          }
+        }
+
+        p {
+          line-height: 24px;
+        }
+
+      }
+
+      .awardsWrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 380px;
+        left: 0;
+        z-index: 3;
+        padding: 96px 32px;
+
+        .imgBlock {
+          max-width: 342px;
+          width: 100%;
+          padding: 24px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+
+          &:nth-child(4) {
+            background-color: $orange-color;
+            width: 100%;
+            height: 163px;
+
+            h5 {
+              font-family: $cormorant-font;
+              font-size: 18px;
+              margin-bottom: 8px;
+            }
+
+            p {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .firstSection {
+    background-color: #151515;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .firstSectionContent {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 96px 32px;
+
+      .textContainer {
+        max-width: 1464px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .textBlock {
+          max-width: 732px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 0 12px;
+        }
+      }
+
+      .vidTextContainer {
+        max-width: 1464px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding: 0 12px;
+        margin-top: 50px;
+
+
+        .vidBlock {
+          max-width: 830px;
+          width: 100%;
+          height: 467px;
+          background-image: url("https://html.rometheme.pro/cinestar/image/image-900x500-1.jpg");
+          background-position: center;
+          background-size: cover;
+          position: relative;
+
+        }
+
+        .textBlock {
+          max-width: 610px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          h5 {
+            font-size: 18px;
+            margin-bottom: 8px;
+          }
+
+          .numbersRow {
+            width: 100%;
+            display: flex;
+
+            .numbersColumn {
+              width: 50%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+
+              h3 {
+                font-size: 48px;
+                color: $orange-color;
+
+              }
+            }
+          }
+
+
+        }
+
+      }
+
+    }
+  }
+
+  .secondSection {
+    background-color: #212121;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .secondSectionContent {
+
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 96px 32px;
+      .title {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        padding-left:88px ;
+      }
+
+    .vidBlock {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      align-items: center;
+      padding: 100px 0;
+      .imgBlock {
+        max-width: 540px;
+        img {
+          width: 100%;
+          object-position: center;
+          object-fit: cover;
+        }
+      }
+      .playVideoBlock {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        max-width: 720px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 405px;
+        background-image: url("https://html.rometheme.pro/cinestar/image/image-900x600-2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+      }
+    }
+
+      .textContainer {
+        max-width: 1464px;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        font-family: $montserrat-font;
+
+        .textBlock {
+          max-width: 732px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 0 12px;
+
+          .buttonsRow {
+            width: 100%;
+            display: flex;
+            align-items: end;
+            justify-content: start;
+            gap: 60px;
+            height: 70px;
+
+            .button {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+              justify-content: center;
+              max-width: 236px;
+              transition: margin-bottom $transition;
+              &:hover {
+                margin-bottom: 10px;
+              }
+
+
+              a {
+
+                padding: 11px 0;
+                font-family: $quick-sand-font;
+                font-weight: 800;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                margin: 0;
+
+              }
+
+              &:nth-child(1) {
+                max-width: 185px;
+                width: 100%;
+                border: 1px solid $orange-color;
+
+                a {
+                  color: $orange-color;
+                  white-space: nowrap;
+                }
+              }
+
+
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+
+  .thirdSection {
+    width: 100vw;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding: 100px 30px;
+    .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-image: url("https://html.rometheme.pro/cinestar/image/liquifer.png");
+      background-position: center center;
+      background-size: cover;
+      left: 0;
+      top: 0;
+      opacity: 0.05;
+    }
+    .thirdSectionContent {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        z-index: 3;
+      }
+      .servicesRow{
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+
+        .service {
+          max-width:336px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 25px;
+
+          .iconBlock{
+            width: 48px;
+            svg {
+              width: 60px;
+              height: 60px;
+              color: $orange-color;
+            }
+          }
+
+          .textBlock {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            h5 {
+              font-family: $cormorant-font;
+              font-size: 18px;
+              margin-bottom: 8px;
+            }
+
+          }
+
+        }
+      }
+
+    }
+  }
+
+  .fourthSection {
+    background-color: #151515;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .fourthSectionContent {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 96px 32px;
+
+      .textImgContainer {
+        max-width: 1464px;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 25px;
+
+        .textBlock {
+          max-width: 610px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding:0 12px;
+
+          .title {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            margin-left: -12px;
+          }
+
+          >h5 {
+            font-family: $cormorant-font;
+            font-size: 18px;
+            color: $orange-color;
+          }
+
+          span {
+            font-family: $montserrat-font;
+          }
+
+
+
+        }
+
+        .imgBlock {
+          max-width: 830px;
+          width: 100%;
+          height: 534px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+    }
+  }
+
+  .fifthSection {
+    background-color: #151515;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .fifthSectionContent {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 96px 32px;
+
+      .reviewSwiper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        position: relative;
+        max-width: 1440px;
+        .reviewBlock {
+          background-color: #212121;
+          max-width: 460px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          padding: 24px;
+          gap: 20px;
+          .rating {
+            width: 100%;
+            display: flex;
+            gap: 5px;
+            svg {
+              color: #ffc107;
+              font-size: 20px;
+            }
+          }
+
+          .designation {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .name {
+              display: flex;
+              flex-direction: column;
+
+              h5 {
+                color: $orange-color;
+                font-size: 14px;
+              }
+            }
+
+            .iconBlock {
+              width: 40px;
+              svg {
+                font-size: 40px;
+                color: #7a7a7a;
+              }
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+
+  .sixSection {
+    width: 100%;
+    background-image: url("https://html.rometheme.pro/cinestar/image/image-1920x900-7.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 100px 30px;
+
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(21, 21, 21, 0.9);
+
+    }
+
+    .sixSectionContent {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 3;
+
+      .inputTextContainer {
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 40px;
+        z-index: 4;
+
+        .block {
+          max-width: 696px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: start;
+          overflow: hidden;
+          padding: 0 12px;
+
+
+          //LEFT BLOCK STYLES
+          .inputGrid {
+            max-width: 720px;
+            width: 100%;
+            height: 124px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+
+            input {
+              width: 100%;
+              height: 100%;
+              background: transparent;
+              padding: 16px;
+              color: #fff;
+              border: none;
+              border-bottom: 1px white solid;
+              border-left: 1px white solid;
+              margin-bottom: 12px;
+              &:focus {
+                border-bottom:1px blue solid;
+                border-left: 1px blue solid;
+              }
+
+            }
+          }
+
+          .message {
+            width: 100%;
+            max-height: 300px;
+            min-height: 50px;
+            height: 160px;
+            background: transparent;
+            padding: 6px 12px;
+            color: #fff;
+            border: none;
+            border-bottom: 1px white solid;
+            border-left: 1px white solid;
+            resize: vertical;
+            margin: 48px 0 12px;
+
+            &:focus {
+              border-bottom:1px blue solid;
+              border-left: 1px blue solid;
+            }
+          }
+
+          .button {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            justify-content: center;
+            max-width: 176px;
+            transition: border $transition,color $transition;
+            border: 1px solid $orange-color;
+            margin-bottom: 20px;
+            &:hover {
+              color: white;
+              border-color: white;
+
+              a{
+                color: #fff
+              }
+            }
+            a {
+              padding: 16px 32px;
+              font-family: $quick-sand-font;
+              font-weight: 800;
+              display: flex;
+              align-items: center;
+              margin: 0;
+              color: $orange-color;
+              transition: color $transition;;
+              white-space: nowrap;
+            }
+          }
+
+          p {
+            font-family: $quick-sand-font;
+            font-weight: 700;
+          }
+
+          //RIGHT BLOCK STYLES
+          .title {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            margin-left: -12px;
+          }
+
+          p {
+              width: 100%;
+            text-align: start;
+            line-height: 24px;
+
+          }
+
+          .contactGrid {
+            max-width: 720px;
+            width: 100%;
+            height: 90px;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-content: center;
+
+            .contact {
+              width: 100%;
+              display: flex;
+              align-items: start;
+              svg {
+                color: $orange-color;
+                font-size: 20px;
+              }
+              span {
+                padding: 0 12px;
+              }
+            }
+
+
+          }
+
+
+        }
+      }
+    }
+  }
+
+  .seventhSection {
+    background-color: #212121;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .seventhSectionContent {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 96px 32px;
+
+
+      .textContainer {
+        max-width: 1464px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .textBlock {
+          max-width: 732px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 0 12px;
+        }
+
+      }
+      .cardsWrapper {
+        max-width: 1464px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+
+        .card {
+          max-width: 464px;
+          padding: 4px;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          border: 1px solid #414141;
+
+          .imgBlock {
+            max-width: 456px;
+            width: 100%;
+            height: 302px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+          .cardText {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            h5 {
+              font-size: 18px;
+              color: $orange-color;
+              transition: color $transition;
+              cursor: pointer;
+              &:hover {
+                color: white;
+              }
+            }
+            p {
+              font-size: 17px;
+              line-height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and  (max-width: 1250px){
+  .homeWrapper {
+    .seventhSection {
+      .seventhSectionContent {
+        .textContainer {
+          flex-direction: column;
+          align-items: center;
+          max-width: 600px;
+        }
+        .cardsWrapper {
+          flex-wrap: wrap;
+          .card {
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and  (max-width: 1200px){
+  .homeWrapper {
+    .homeSection {
+      height: 800px;
+      justify-content: start;
+
+      .homeContent {
+        .homeTitle {
+          margin-bottom: unset;
+          margin-top: 150px;
+          padding: 0 30px;
+          h1 {
+            font-size: 42px;
+          }
+        }
+        .awardsWrapper {
+          top: 370px;
+          padding: 0 15px;
+        }
+      }
+    }
+    .firstSection {
+      .firstSectionContent {
+        padding: 50px 30px;
+
+        .vidTextContainer {
+          padding: 0;
+          .textBlock {
+            max-width: 400px;
+          }
+        }
+
+      }
+    }
+    .secondSection {
+      .secondSectionContent {
+        padding: 50px 30px;
+        .title {
+          padding: 0;
+          margin-left: -12px;
+        }
+      }
+    }
+    .thirdSection {
+      padding: 50px 30px;
+    }
+    .fourthSection {
+      .fourthSectionContent {
+        padding: 48px 32px;
+        .textImgContainer {
+          .textBlock {
+            max-width: 389px;
+          }
+          .imgBlock {
+            height: 400px;
+          }
+        }
+      }
+    }
+    .fifthSection {
+      .fifthSectionContent {
+        padding: 50px 30px;
+        p {
+          text-align: center;
+        }
+        .reviewSwiper {
+          .reviewBlock {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and  (max-width: 1115px){
+  .homeWrapper {
+    .seventhSection {
+      .seventhSectionContent {
+        padding: 50px 32px;
+        .textContainer {
+          max-width: 485px;
+        }
+      }
+    }
+  }
+}
+@media screen and  (max-width: 1000px){
+  .homeWrapper {
+    .homeSection {
+      height: 700px;
+      .homeContent {
+        .awardsWrapper {
+          .imgBlock {
+            max-width: 250px;
+          }
+        }
+      }
+    }
+    .firstSection {
+      .firstSectionContent {
+        .textContainer {
+          align-items: start;
+        }
+        .vidTextContainer {
+          flex-direction: column;
+          .vidBlock {
+            max-width: unset;
+          }
+          .textBlock {
+            max-width: unset;
+          }
+        }
+      }
+    }
+    .secondSection {
+      .secondSectionContent {
+        .vidBlock {
+          height: 550px;
+          img {
+            display: none;
+
+          }
+          .playVideoBlock {
+            max-width: unset;
+            height: 500px;
+          }
+        }
+        .textContainer {
+          flex-direction: column;
+          gap: 10px;
+          .textBlock {
+            max-width: unset;
+
+            .buttonsRow {
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and  (max-width: 900px){
+  .homeWrapper {
+    .fourthSection {
+      .fourthSectionContent {
+        .textImgContainer {
+          .textBlock {
+            max-width: 300px;
+          }
+        }
+      }
+    }
+
+  }
+}
+@media screen and  (max-width: 800px){
+  .homeWrapper {
+    .secondSection {
+      .secondSectionContent {
+        .vidBlock {
+          height: 450px;
+          .playVideoBlock {
+            height: 400px;
+          }
+        }
+      }
+    }
+    .thirdSection {
+      padding: 25px 30px;
+    }
+    .fourthSection {
+      .fourthSectionContent {
+        padding: 25px 30px;
+        .textImgContainer {
+          flex-direction: column;
+          .textBlock {
+            max-width: unset;
+          }
+          .imgBlock {
+            max-width: unset;
+            height: 300px;
+          }
+
+
+        }
+      }
+    }
+    .sixSection {
+      padding: 50px 30px;
+      .sixSectionContent {
+        .inputTextContainer {
+          gap: 25px;
+          flex-direction: column;
+          .block {
+            max-width: unset;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .homeWrapper {
+    .homeSection {
+      height: 1000px;
+      .homeContent {
+        .awardsWrapper {
+          top: 340px;
+          gap: 25px;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          padding: 0;
+          .imgBlock {
+            padding: 0;
+            max-width: 300px;
+            &:nth-child(4) {
+              padding: 10px;
+              max-width: 80%;
+              text-align: center;
+              height: auto;
+            }
+          }
+        }
+        .homeTitle {
+          margin-top: 110px;
+          h1  {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+    .firstSection {
+      .firstSectionContent {
+        .textContainer {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .vidTextContainer {
+          .vidBlock {
+            height: 300px;
+          }
+        }
+      }
+    }
+    .secondSection {
+      .secondSectionContent {
+        padding: 48px 32px;
+        .textContainer {
+          flex-direction: column;
+          .textBlock {
+            .buttonsRow {
+              flex-direction: column;
+              height: auto;
+              align-items: center;
+              gap: 25px;
+              margin-top: 25px;
+            }
+          }
+        }
+        .vidBlock {
+          height: 350px;
+          .playVideoBlock {
+            height: 300px;
+          }
+        }
+      }
+    }
+    .fifthSection {
+      .fifthSectionContent {
+        padding: 25px 30px;
+      }
+    }
+    .seventhSection {
+      .seventhSectionContent {
+        padding: 30px 30px;
+        .textContainer {
+          max-width: unset;
+          margin-left: -20px;
+        }
+        .cardsWrapper {
+          .card {
+            max-width: unset;
+            .imgBlock {
+              max-width: unset;
+              height: 250px;
+            }
+          }
+        }
+
+      }
+    }
+
+
+  }
+
+}
+@media screen and (max-width: 440px) {
+  .homeWrapper {
+    .homeSection {
+      .homeContent {
+        .homeTitle {
+          p {
+            line-height: 18px;
+          }
+          h1  {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .firstSection {
+      .firstSectionContent {
+        .vidTextContainer {
+          .textBlock {
+            .numbersRow {
+              .numbersColumn {
+                text-align: center;
+                h3 {
+                  font-size: 32px;
+                }
+              }
+            }
+          }
+          .vidBlock {
+            height: 220px;
+          }
+        }
+      }
+    }
+    .secondSection {
+      .secondSectionContent {
+        .vidBlock {
+          height: 250px;
+          .playVideoBlock {
+            height: 200px;
+          }
+        }
+      }
+    }
+    .fourthSection {
+      .fourthSectionContent {
+        .textImgContainer {
+          .imgBlock {
+            height: 250px;
+          }
+
+
+        }
+      }
+    }
+    .sixSection {
+      .sixSectionContent {
+        .inputTextContainer {
+          .block {
+            .inputGrid {
+              grid-template-rows: repeat(4, 1fr);
+              grid-template-columns: repeat(1, 1fr);
+              height: auto;
+            }
+            .message {
+              margin-top: 20px;
+            }
+            .contactGrid {
+              grid-template-rows: repeat(4, 1fr);
+              grid-template-columns: repeat(1, 1fr);
+              height: auto;
+              .contact {
+                padding: 6px 0;
+              }
+
+            }
+          }
+        }
+      }
+    }
+    .seventhSection {
+      .seventhSectionContent {
+        .textContainer {
+        }
+        .cardsWrapper {
+          .card {
+            .imgBlock {
+              height: 220px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+
+

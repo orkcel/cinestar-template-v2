@@ -1,0 +1,163 @@
+@import "/src/Variables/Variables.module";
+
+.headerWrapper {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  background-color: #151515;
+  padding: 8px 0;
+  justify-content: center;
+  z-index: 4;
+  flex-direction: column;
+  .headerContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 8px 12px;
+    max-width: 1440px;
+    position: relative;
+    &.menuOpen {
+      gap: 0;
+    nav {
+      height: auto;
+      margin-top: 20px;
+      .navEntity{
+        padding: 5px 0;
+        height: auto;
+        transform: scaleY(1);
+        opacity: 1;
+        width: 100%;
+      }
+    }
+    }
+
+    .imgBlock {
+      img {
+        max-width: 190px;
+        width: 100%;
+      }
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      transition: transform $transition opacity $transition;
+      .navEntity {
+        padding: 19.2px 8px;
+        display: flex;
+        cursor: pointer;
+        position: relative;
+        transition: transform $transition;
+        .entityTitle {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          svg {
+            margin-bottom: 16px;
+          }
+
+        }
+        .dropDown {
+          display: flex;
+          flex-direction: column;
+          background-color: #212121;
+          padding: 8px 0;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          pointer-events: none;
+          opacity: 0;
+          transform: scaleY(0);
+          transition: opacity $transition transform $transition;
+          &.visible {
+            opacity: 1;
+            pointer-events: auto;
+            height: auto;
+            transform: scaleY(1);
+          }
+          a {
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 8px 32px;
+            white-space: nowrap;
+          }
+        }
+        &:hover {
+          p {
+            color: $orange-color;
+          }
+          svg {
+            color: $orange-color;
+          }
+        }
+        p {
+          text-transform: uppercase;
+          color: white;
+          transition: color $transition;
+          font-weight: 700;
+        }
+        svg {
+          color: white;
+          transition: color $transition;
+          font-size: 12px;
+        }
+      }
+    }
+    .menu {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      cursor: pointer;
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 850px){
+  .headerWrapper {
+    .headerContent {
+      flex-direction: column;
+      align-items: start;
+      justify-content: unset;
+      gap: 0;
+      padding: 8px 12px 8px 30px;
+      .imgBlock {
+        max-width: 120px;
+        img {
+          width: 100%;
+          object-position: center;
+          object-fit: cover;
+        }
+      }
+      .nav {
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+        gap: 0;
+        .navEntity {
+          padding: 0;
+          height: 0;
+          transform: scaleY(0);
+          transform-origin: top;
+          opacity: 0;
+          flex-direction: column;
+          .dropDown {
+            position: unset;
+            left: unset;
+            top: unset;
+            height: 0;
+          }
+        }
+      }
+      .menu {
+        display: flex;
+        font-size: 28px;
+        color: $orange-color;
+      }
+    }
+  }
+}

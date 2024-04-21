@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "icon": "film",
+    "title": "FILM PRODUCTION",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis"
+  },
+  {
+    "id": 2,
+    "icon": "gallery",
+    "title": "CREATIVE DIRECTION",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis"
+  },
+  {
+    "id": 3,
+    "icon": "camera",
+    "title": "TVC PRODUCTION",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis"
+  },
+  {
+    "id": 4,
+    "icon": "music",
+    "title": "MUSIC VIDEO",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis"
+  }
+]

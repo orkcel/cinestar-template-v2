@@ -1,0 +1,49 @@
+@import "/src/Variables/Variables.module";
+
+.sectionTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+  &.uniqueSectionTitle {
+    align-items: center;
+   h5 {
+     text-align: center;
+   }
+    h3 {
+      text-align: center;
+    }
+  }
+
+  h5 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: $orange-color;
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    font-family: $cormorant-font;
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+
+
+}
+@media screen and (max-width: 900px) {
+.sectionTitle {
+  h3 {
+    font-size: 32px;
+  }
+}
+}
+@media screen and (max-width: 500px) {
+  .sectionTitle {
+    &.uniqueSectionTitle {
+      h3 {
+        font-size: 20px;
+      }
+    }
+
+  }
+}
