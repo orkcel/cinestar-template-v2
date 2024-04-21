@@ -13,12 +13,12 @@ import {
     WhatsappLogo
 } from "@phosphor-icons/react";
 import {useCallback, useMemo, useState,useEffect} from "react";
-import servicesData from "/src/data/servicesData.json";
-import reviewData from "/src/data/reviewData.json";
+import servicesData from "/public/data/servicesData.json";
+import reviewData from "/public/data/reviewData.json";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import {Footer} from "../../Components/Footer/Footer.jsx";
-import blogCardsData from "/src/data/blogCardsData.json";
+import blogCardsData from "/public/data/blogCardsData.json";
 
 
 export const Home = () => {
